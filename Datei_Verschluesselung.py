@@ -21,7 +21,7 @@ class DateiVerschluesseler:
         verschluesselte_daten = fernet.encrypt(datei_daten)
         with open(dateipfad, 'wb') as datei:
             datei.write(verschluesselte_daten)
-        print("Datei \'{}\' verschluesselt.".format(dateipfad))
+        ##print("Datei \'{}\' verschluesselt.".format(dateipfad))
 
     def dateiEntschluesseln(self, schluessel, dateipfad):
         fernet = Fernet(schluessel)
@@ -30,7 +30,7 @@ class DateiVerschluesseler:
         entschluesselte_daten = fernet.decrypt(verschluesselte_daten)
         with open(dateipfad, 'wb') as datei:
             datei.write(entschluesselte_daten)
-        print("Datei \'{}\' entschluesselt.".format(dateipfad))
+        ##print("Datei \'{}\' entschluesselt.".format(dateipfad))
 
     def datenEntschluesseln(self, schluessel, dateipfad):
         fernet = Fernet(schluessel)
