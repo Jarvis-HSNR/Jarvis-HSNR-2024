@@ -1456,7 +1456,7 @@ Die create_mail() Funktion geht so vor:
 
 1. Email-Objekt erstellen:
 * Am Anfang wird ein leeres E-Mail-Objekt angelegt, in das die verschiedenen Bestandteile der Email eingetragen werden. (Absender, Betreff, Empfänger, Inhalt)
-2. Betreff
+2. Betreff:
 * Der Benutzer spricht den Betreff als Eingabe ein
 3. Email-Inhalt zusammensetzen:
 * Der Benutzer spricht seine Nachricht ein
