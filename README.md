@@ -1,3 +1,14 @@
+{% tabs %}
+
+{% tab title="Instructions" %} Here are the instructions for Windows {% endtab %}
+
+
+
+{% endtabs %}
+
+
+
+
 ---
 title: "Hackathon:JARVIS"
 author: "Niclas Hansen,Pascal Nguyen, Vincent Clark Lipperson, Schervin Jamshidpey, Jonathan Wittmann, Aaron Clemens"
