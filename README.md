@@ -1,7 +1,4 @@
 
-
-
-
 ---
 title: "Hackathon:JARVIS"
 author: "Niclas Hansen,Pascal Nguyen, Vincent Clark Lipperson, Schervin Jamshidpey, Jonathan Wittmann, Aaron Clemens"
