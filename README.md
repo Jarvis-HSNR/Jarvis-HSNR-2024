@@ -1,10 +1,3 @@
-{% tabs %}
-
-{% tab title="Instructions" %} Here are the instructions for Windows {% endtab %}
-
-
-
-{% endtabs %}
 
 
 
