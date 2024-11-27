@@ -1,31 +1,30 @@
-
 ---
-title: "Hackathon:JARVIS"
-author: "Niclas Hansen,Pascal Nguyen, Vincent Clark Lipperson, Schervin Jamshidpey, Jonathan Wittmann, Aaron Clemens"
-date: "30.20.2024"
-
+title: Hackathon JARVIS
+authors:
+  - Niclas Hansen
+  - Pascal Nguyen
+  - Vincent Clark Lipperson
+  - Schervin Jamshidpey
+  - Jonathan Wittmann
+  - Aaron Clemens
+date: 2024-11-30
 ---
 
-----------------
 
-
-## 1 Formales
+# 1 Formales
 
 ## 1.1 Angaben zum Projekt
 
-- **Datum: 25.10.2024**
-- **Projektname**: **Jarvis**
-- **Gruppennummer:** 2
-- **Namen der Gruppenmitglieder und deren Verantwortlichkeiten**:
-  * \<Niclas Hansen\>, \<1487415\> 
-  * \<Pascal Nguyen\>, \<1497111\> 
-  * \<Vincent Clark Lipperson\>, \<1506723\> 
-  * \<Schervin Jamshidpey\>, \<1489972\>
-  * \<Jonathan Wittmann\>, \<1332797\>
-  * \<Aaron Clemens\>, \<1502572\>
--------------
-
-
+* **Datum:** 25.10.2024
+* **Projektname:** Jarvis
+* **Gruppennummer:** 2
+* **Gruppenmitglieder:**
+  * Niclas Hansen
+  * Pascal Nguyen
+  * Vincent Clark Lipperson
+  * Schervin Jamshidpey
+  * Jonathan Wittmann
+  * Aaron Clemens
 
 ## 2 Zweck & Ziel
 Das Ziel dieses Projekts ist die Entwicklung eines sprachgesteuerten Assistenzsystems, das grundlegende Funktionen wie Spracheingabe, Sprachausgabe, das Verfassen und Vorlesen von E-Mails sowie die Ausgabe aktueller Top-Nachrichten ermöglicht. Inspiriert von dem Assistenzsystem JARVIS, soll das zu entwickelnde System in der Lage sein, ähnliche Aufgaben im Kontext eines alltäglichen Gebrauchs zu bewältigen. Hierbei steht die Teamarbeit im Vordergrund, da die Erstellung eines solchen Systems neben technischem Wissen auch gute Koordination und Zusammenarbeit erfordert.
@@ -43,7 +42,6 @@ Zusätzlich soll das System einen Nachrichten-Feed bereitstellen. Hierbei kann d
 Diese Funktionen gewährleisten, dass das System den Anforderungen eines modernen sprachgesteuerten Assistenten entspricht und eine benutzerfreundliche, effiziente Interaktion ermöglicht.
 
 
----
 ## 3.2 Nicht-funktionale Anforderungen: 
 Das zu entwickelnde System muss nicht nur funktionale Anforderungen erfüllen, sondern auch in den Bereichen Sicherheit, Performance, Datenschutz und Benutzerfreundlichkeit hohen Standards genügen. Diese Aspekte sind entscheidend, um ein robustes, zuverlässiges und anwenderfreundliches System zu schaffen.
 
@@ -60,7 +58,6 @@ Der Schutz der Privatsphäre der Benutzer ist ein weiteres zentrales Kriterium. 
 Ein benutzerfreundliches System ist der Schlüssel für eine hohe Akzeptanz und Nutzung. Die Benutzeroberfläche sowie die Interaktionen müssen intuitiv gestaltet sein, sodass auch technisch weniger versierte Anwender problemlos damit arbeiten können. Die Spracheingabe sollte präzise und unkompliziert sein, und das System muss in der Lage sein, auch bei verschiedenen Akzenten oder Sprachvariationen korrekte Ergebnisse zu liefern. Ebenso muss die Sprachausgabe klar und verständlich sein. Es sollten keine komplexen technischen Einstellungen notwendig sein, um das System in Betrieb zu nehmen, und die Navigation zwischen den verschiedenen Funktionen muss nahtlos erfolgen. Ein einfaches Onboarding für neue Benutzer sowie die Möglichkeit, auf einfache Weise Hilfe und Support zu erhalten, tragen zusätzlich zur Benutzerfreundlichkeit bei.
 Durch die Beachtung dieser Anforderungen an Sicherheit, Performance, Datenschutz und Benutzerfreundlichkeit wird sichergestellt, dass das System sowohl effektiv als auch vertrauenswürdig und nutzerorientiert ist.
 
----
 
 ## 3.3 Systemdesign-Dokumentation: 
 ### 3.3.1 Architekturdiagramme:
@@ -100,7 +97,6 @@ Der Benutzer wird gefragt, welche Nachrichten er lesen möchte. Daraufhin zeigt 
 #### 3.4.6 Logout/Exit
 Diese Funktion ermöglicht dem Benutzer, das Programm zu beenden. Nach einer Bestätigung wird die Anwendung geschlossen.
 
----
 
 ## 3.5 Architekturdiagramme
 ### 3.5.1 Mockup
@@ -111,7 +107,6 @@ Diese Funktion ermöglicht dem Benutzer, das Programm zu beenden. Nach einer Bes
 ![](https://i.imgur.com/WSjAgQO.png)
 
 
----
 
 ## 3.6 Sicherheitsarchitektur
 **Pro- und Contra- Liste für das OWASP-Framework**
@@ -246,7 +241,7 @@ Dadurch können wir Systemressourcen und Anwendung Metriken überwachen und so p
 ### 3.8 Code Architektur
 
 #### 3.8.1 Sichere Anmeldeinformationsverwaltung:
--
+
  Statt die Anmeldeinformationen fest in den Quellcode einzugeben werden Variablen verwendet. Dies verhindert die Offenlegung von Anmeldeinformationen in der Versionskontrolle, eine einfache Rotation der Anmeldeinformationen und befolgen das Prinzip der geringsten Privilegien
 ```python
 # Unsafe
@@ -411,7 +406,7 @@ SECURITY_CONFIG = {
 }
 
 ```
----
+
 ## 3.9 Tool-Liste: 
 
 ### 3.9.1 News Tools:
@@ -430,8 +425,6 @@ SECURITY_CONFIG = {
 
 **Vor- und Nachteile:** RSS ermöglicht einfache und schnelle Aktualisierungen, jedoch sind Inhalte begrenzt auf den Feed, und es ist keine Interaktion möglich.
 
----
-
 ### 3.9.2 Chatbots:
 
 **“Rasa”**
@@ -448,8 +441,6 @@ SECURITY_CONFIG = {
 **Funktion:** Ein Open-Source-Framework für Conversational AI und Chatbots, das vortrainierte NLP-Modelle enthält. DeepPavlov kann auf benutzerdefinierten Daten trainiert werden und lokal verwendet werden.
 
 **Vor- und Nachteile:** Ideal für NLP-Chatbots, unterstützt die Sprachanalyse und Dialogverwaltung, keine API erforderlich.
-
----
 
 
 ### 3.9.3 Sicherheits-tools:
@@ -524,7 +515,6 @@ Funktion: Eine benutzerfreundliche Firewall für Linux-Systeme.
 **Vorteile**: Schützt vor Viren, Malware und Trojanern, kostenlos und Open Source, unterstützt On-Demand- und Echtzeit-Scanning.
 **Nachteile**: Höhere CPU-Auslastung bei Scans, begrenzter Schutz bei neuester Malware ohne aktuelle Signaturen.
 
----
 
 ### 3.9.4 Email-Protokolle:
 
@@ -546,7 +536,7 @@ Bedarf an Konfiguration und ist hauptsächlich CLI-basiert, was eventuell eine E
 Anfällig für Spam: Die Einfachheit des Protokolls wird oft missbraucht, um Spam-E-Mails zu senden, wodurch zusätzliche Spam-Filter notwendig werden.
 Fehlende Rückverfolgbarkeit: E-Mails lassen sich leicht fälschen (Spoofing), weshalb zusätzliche Authentifizierungsmaßnahmen wie SPF und DKIM erforderlich sind, um Absender zu verifizieren.
 
----
+
 ### 3.9.5 Voice-Tools:
 **“MetaVoice-1B”**
 **Funktion**: Eine leistungsstarke Sprachausgabe-Engine, die Stimmen mit hoher Natürlichkeit und emotionalem Ausdruck für KI-Anwendungen wie Jarvis erzeugt.
@@ -557,9 +547,6 @@ Fehlende Rückverfolgbarkeit: E-Mails lassen sich leicht fälschen (Spoofing), w
 
 **Vorteile**: Hohe Natürlichkeit und emotionale Tiefe der Stimmen, kann unterschiedliche Sprachstile und Stimmungen darstellen, ideal für personalisierte Assistenten und immersive Anwendungen.
 **Nachteile:** Benötigt hohe Rechenleistung, eventuell kostenpflichtige Lizenzierung, für individuelle Implementationen eventuell zusätzliche API- oder Serveranbindung erforderlich."
-
-
----
 
 
 ## 3.10 Kostenrechnung für das Projekt
@@ -677,7 +664,7 @@ Für besonders dringende Anfragen außerhalb der vereinbarten SLA-Reaktionszeite
 #### 3.12.7 Regelmäßige Systemerweiterungen: 
 Bei bestimmten SLA-Stufen könnte der Kunde auf regelmäßige Funktionsupdates und Erweiterungen zugreifen. Dafür könnten monatlich zusätzliche **500–1.000** EUR berechnet werden
 
----
+
 ## 3.12.8 Zusammefassung der SLA- Kosten
 
 
@@ -688,18 +675,17 @@ Bei bestimmten SLA-Stufen könnte der Kunde auf regelmäßige Funktionsupdates u
 |Premium- SLA|Tägliche Backups, erweiterte Sicherheitsupdates|99,5%|12 Stunden|2500|
 |Individual- SLA|Maßgeschneiderte Optionen nach Kundenbedarf|99,9%|< 6 Stunden|5000+|
 
----
 
 ## 3.13 Grundgerüst des Codes Teil 1
 
 Projektstart: Wahl der Ressourcen und erste Schritte
 Um eine solide Basis zu schaffen, entschieden wir uns, uns an dem https://www.geeksforgeeks.org/how-to-make-a-voice-assistant-for-e-mail-in-python/-Leitfaden zur E-Mail-Sprachsteuerung zu orientieren. 
 
-#### 3.13.1 Sprachausgabe mit ```pyttsx3```
+#### 3.13.1 Sprachausgabe mit pyttsx3
 
 Für die Sprachausgabe haben wir `pyttsx3` genutzt. Die Funktion `speak()` gibt uns die Möglichkeit, Nachrichten per Text-to-Speech vorzulesen:
 
-```python 
+```python  
 import pyttsx3
 
 def speak(text):
@@ -1108,8 +1094,6 @@ def speak(text):
 #### 3.16.6 Sprache des Systems herrausfinden
 Folgend wird gezeigt, wie man die Sprache im Register-Editor herrausffindet:
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\
-
 0 = TTS_MS_DE-DE_HEDDA_11.0
 1 = TTS_MS_EN-US_DAVID_11.0
 2 = TTS_MS_EN-US_ZIRA_11.0
@@ -1300,363 +1284,52 @@ def talk_with_chatgpt():
     speak("Die Funktion ist noch offen.")
 ```
 
-### 3.17 Kompletter Pythoncode
-
-```python
-import os
-import smtplib
-import imaplib
-import email
-import pyttsx3
-import speech_recognition as sr
-import pyaudio
-from newsapi import NewsApiClient
-from text_to_num import text2num
-from langdetect import detect
-
-
-# Initialize NewsApiClient with your API key
-newsapi = NewsApiClient(api_key='27b11c408f6e41cdb927b1b3e4943949')
-
-# Login Data
-email_user = 'jarvis505hsnr@gmail.com'
-email_pass = 'xgkj unvv xbqm bxno'
-
-# Initialize PyAudio
-p = pyaudio.PyAudio()
-
-
-def speak(text):
-    """Convert text to speech."""
-    language = detect(text)
-    match language:
-        case "de":
-            index = 0
-        case "en":
-            index = 1
-        case _:
-            index = 0
-
-    engine = pyttsx3.init()
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[index].id)
-    rate = engine.getProperty('rate')
-    engine.setProperty('rate', rate - 50)
-    engine.say(text)
-    engine.runAndWait()
-
-
-def get_audio(language="en-US"):
-    """
-    Get audio input from the user.
-    language = "de-DE" --> German
-             = "en-EN" --> Englisch
-             = "en-US" --> American (Standard)
-
-    Returns:
-    str: The text converted from the audio input.
-    """
-    r = sr.Recognizer()
-    said = None
-    try:
-        with sr.Microphone(device_index=1) as source:
-            r.adjust_for_ambient_noise(source, duration=0.5)
-            if language == "de-DE":
-                print("Bitte jetzt sprechen...")
-            else:
-                print("Listening...")
-            audio = r.listen(source, timeout=5)
-            try:
-                said = r.recognize_google(audio, language=language, show_all=False)
-                if language == "de-DE":
-                    print(f"Du sagtest: {said}")
-                else:
-                    print(f"You said: {said}")
-            except sr.UnknownValueError:
-                if language == "de-DE":
-                    print("Die Spracherkennung von Google konnte Audio nicht verstehen.")
-                else:
-                    print("Google Speech Recognition could not understand audio.")
-            except sr.RequestError as e:
-                if language == "de-DE":
-                    print(f"Ergebnisse vom Google-Spracherkennungsdienst konnten nicht angefordert werden: {e}")
-                else:
-                    print(f"Could not request results from Google Speech Recognition service: {e}")
-            except sr.WaitTimeoutError:
-                if language == "de-DE":
-                    print("Zeitüberschreitung beim Abhören.")
-                else:
-                    print("Listening timed out.")
-    except Exception as e:
-        if language == "de-DE":
-            print(f"Mikrofonfehler: {e}")
-        else:
-            print(f"microphone error: {e}")
-    return said.lower() if said is not None else None
-
-
-def imap_connect_to_email():
-    """Connect to the email server."""
-    # Connect to the IMAP server
-    mail = imaplib.IMAP4_SSL('imap.gmail.com')
-    mail.login(email_user, email_pass)
-
-    return mail
-
-def smtp_connect_to_email():
-    """Connect to the email server."""
-    # Connect to the SMTP server
-    try:
-        smtp_ssl = smtplib.SMTP_SSL(host="smtp.gmail.com", port=465)
-    except Exception as e:
-        print("ErrorType : {}, Error : {}".format(type(e).__name__, e))
-        smtp_ssl = None
-
-    smtp_ssl.login(email_user, email_pass)
-    return smtp_ssl
-
-def check_mails(mail):
-    """Check and read out emails."""
-    mail.select('inbox')
-    result, data = mail.search(None, 'ALL')
-    email_ids = data[0].split()
-
-    if not email_ids:
-        print('No messages found.')
-        speak('No messages found.')
-        return
-
-    # Reverse the email_ids list to read from newest to oldest
-    email_ids = email_ids[::-1]
-
-    print(f"{len(email_ids)} emails found.")
-    speak(f"{len(email_ids)} emails found.")
-    speak("If you want to read any particular email, just say read.")
-    speak("If you want to delete any particular email, just say delete.")
-    speak("If you want to skip a particular email, just say skip.")
-    speak("And for leaving, say exit.")
-    print("Please say read, delete, skip or exit")
-    speak("Please say: read, delete, skip, or exit")
-
-    i = 0
-    for email_id in email_ids:
-        i = i +1
-        result, message_data = mail.fetch(email_id, '(RFC822)')
-
-        # Check if the fetch was successful
-        if result != 'OK':
-            print("Error fetching email.")
-            continue
-
-        # Ensure message_data is in the expected format
-        msg = email.message_from_bytes(message_data[0][1]) if isinstance(message_data[0], tuple) and len(
-            message_data[0]) > 1 else None
-
-        if msg is None:
-            print("Could not parse email message.")
-            continue
-
-        match i:
-            case 1:
-                sText = "{}st ".format(i)
-            case 2:
-                sText = "{}nd ".format(i)
-            case 3:
-                sText = "{}rd ".format(i)
-            case _:
-                sText = "{}th ".format(i)
-
-        sText1 = sText + "Email is From: {}, Subject: {}'".format(msg['From'], msg['Subject'])
-        print(sText1)
-        sText2 = sText + "Email is from {} with subject: {}'".format(msg['From'], msg['Subject'])
-        speak(sText2)
-        text = None
-        while text == None:
-            text = get_audio()
-
-        if text == "exit":
-            speak("Goodbye!")
-            return
-
-        if "read" in text:
-            if msg.is_multipart():
-                for part in msg.walk():
-                    if part.get_content_type() == "text/plain":
-                        body = part.get_payload(decode=True).decode()
-                        print(body)
-                        speak(body)
-            else:
-                body = msg.get_payload(decode=True).decode()
-                print(body)
-                speak(body)
-            print("Would you wand to delete this email? (yes/no)")
-            speak("Would you wand to delete this email?")
-            speak("Please say yes or no.")
-            text_loeschen = None
-            while text_loeschen == None:
-                text_loeschen = get_audio()
-            if "yes" in text_loeschen:
-                mail.store(email_id, '+FLAGS', '\\Deleted')
-                mail.expunge()
-                speak("Email deleted.")
-
-        elif "delete" in text:
-            mail.store(email_id, '+FLAGS', '\\Deleted')
-            mail.expunge()
-            speak("Email deleted.")
-        else:
-            speak("Email skipped.")
-
-
-def get_news():
-    top_headlines = newsapi.get_top_headlines(language='en', country='us')
-
-    if top_headlines['articles']:
-        speak("How many news do you want to hear?")
-        count_news = None
-        while count_news is None:
-            count_news = get_audio("en-EN")
-            ##count_news = get_audio("de-DE")
-        k = text2num(count_news, "en")
-        ##k = text2num(count_news, "de")
-        news_text = "Here are {} top news headlines.".format(k)
-        print(news_text)
-        speak(news_text)
-        i = 0
-        for article in top_headlines['articles'][:k]:  # Read out the first k articles
-            i += 1
-            match i:
-                case 1:
-                    sText = "{}st news: \'{}\'".format(i, article['title'])
-                case 2:
-                    sText = "{}nd news: \'{}\'".format(i, article['title'])
-                case 3:
-                    sText = "{}rd news: \'{}\'".format(i, article['title'])
-                case _:
-                    sText = "{}th news: \'{}\'".format(i, article['title'])
-            print(sText)
-            speak(sText)
-            speak(article['description'])
-    else:
-        speak("Sorry, I couldn't find any news right now.")
-
-
-def read_email():
-    mail = imap_connect_to_email()
-    check_mails(mail)
-    mail.logout()  # Logout after checking emails
-
-
-def talk_with_chatgpt():
-    print("Die Funktion ist noch offen.")
-    speak("Die Funktion ist noch offen.")
-
-
-def create_mail():
-    message = email.message.EmailMessage()
-    message["From"] = email_user
-    message["To"] = ["Pascal.ng1310@gmail.com"]
-    message["cc"] = ["Test1@gmx.de"]
-    #message["Bcc"] = ["Test2@gmx.de"]
-    message["Subject"] = "Test Email Nr. 2"
-
-    body = '''
-    Hallo Pascal,
-
-    das ist ein Test-Email vom Message-Projekt.
-
-    Gruss
-    Test-Gruppe
-    '''
-    message.set_content(body)
-
-    return message
-
-def write_email():
-    smtp_ssl = smtp_connect_to_email()
-    message = create_mail()
-    smtp_ssl.send_message(msg=message)
-    smtp_ssl.quit()
-
-    sText = "Email to {} is sent with subject: ".format(message["To"])
-    print(sText)
-    speak(sText)
-    print(message["Subject"])
-    speak(message["Subject"])
-    print("Inhalt:")
-    print(message.get_content())
-    speak(message.get_content())
-
-def main():
-    while True:
-        speak("Would you like to check your emails, hear the latest news or chat with chatgpt? Or say exit to quit.")
-        print("Please say email, news, ChatGPT or exit")
-        speak("Please say: email, news, ChatGPT, or exit")
-        text = None
-        while text == None:
-            text = get_audio()
-
-        if text == "exit":
-            speak("Goodbye!")
-            break
-
-        if "email" in text:
-            speak("Do you want to read your emails or write a email?")
-            print("Please say read or write")
-            speak("Please say read or write")
-            answer = None
-            while answer == None:
-                answer = get_audio()
-            if "read" in answer:
-                read_email()
-            else:
-                write_email()
-        elif "news" in text:
-            get_news()
-        elif "gpt" in text:
-            talk_with_chatgpt()
-        else:
-            speak("I didn't understand. Please say email or news.")
-
-
-if __name__ == "__main__":
-    main()
-```
+\newpage
 
 # 4 Realisierung (Meilenstein 2)
 
 ## 4.1 Verteilungssicht
 Technische Infrastruktur mit Umgebungen, Computern, Prozessoren, Topologien.
-Zuordnung von (Software-)Bausteinen zu Infrastruktur-Elementen Quelle: ARC42.
 
+Die technische Infrastruktur wird zum einen aus dem Gerät des Users und einer Debian VM auf einem Proxmox Server bestehen.
+Das Gerät des Users wird keine expliziten technischen bzw. Hardware Spezifikationen benötigen. Mittels einer API wird es dem User möglich sein, mit der Applikation auf der VM zu kommunizieren.
+Die Applikation wird sich in einem Container innerhalb der Debian VM befinden. Der User wird nur dedizierte Privilegien besitzen und nur mit der Applikation als solcher interagieren können, abgesondert vom Rest der VM. 
+Der Zugang für uns Entwickler auf den Server erfolgt via OpenVPN. Die VM mit dem Namen hk13 liegt wiederum auf dem Serverknoten pm3. Will man auf den Server zugreifen benötigt es eine Passphrase, um auf die verschlüsselte Festplatte drauf zuzugreifen. Auf dem Server angelangt gibt es folgende Hierarchie: den User Jarvis und für große bzw. heikle Eingriffe den Root.
+
+Die VM besitzt folgende technische Spezifikationen:
+
+* Debian 12.7.0 amd64
+* 4 GB Arbeitsspeicher
+* 50 GB SSD 
+* Prozessor mit zwei Kernen
+
+Disclaimer: Es handelt sich hier um die aktuelle Infrastruktur-Vorstellung, die nun bereits umgesetzt wird. 
 
 ## 4.2 Umsetzung
-
-Folgend werden Realisierungsdetails der Softwarekomponenten beschrieben. Es wird erklärt, welche Vorgaben aus der Architektur in den  Softwarekomponenten realisiert wurden. Es werden Drei Softwarekomponenten dargestellt, wobei sich die Email Komponenten in 2 Teilkomponenten aufteilt. Zudem wird als weitere Komponente die Verschlüsselung und das Regestrierungsfester beschrieben im Bezug auf die Umsetzung. Bei allen Komponenten wurde vorher eine Recherche durchgeführt und mit der Gruppe evaluiert, welche Tools wir nutzen und wie wir diese nutzen und implementieren. 
+Im Folgenden werden die Realisierungsdetails der Softwarekomponenten beschrieben. Dabei wird erläutert, wie die Vorgaben aus der Architektur in den einzelnen Komponenten umgesetzt wurden. Insgesamt werden 3 Softwarekomponenten dargestellt, wobei sich die Email Komponenten in 2 Teilkomponenten aufteilt. Zudem wird als weitere Komponente die Verschlüsselung und das Registrierungsfenster beschrieben in Bezug auf die Umsetzung. Bei allen Komponenten wurde vorher eine Recherche durchgeführt und mit der Gruppe evaluiert, welche Tools wir nutzen und wie wir diese nutzen und implementieren.
 
 ### 4.2.1 Softwarekomponente Chatbot
-In diesem code schnipsel bauen wir eine conversation mit der LLM names Gemini auf die von Google ist.
+In diesem Code-Schnipsel erstellen wir eine Konversation mit dem Large Language Model (LLM) "Gemini" von Google.
 
 1. Konfiguration
-• Richtet Parameter für die Textgenerierung ein, z.b. Temperatur (Steuert ob die AI Kreativ oder eher Stumpf Antwortet), Top-P, Top-K und maximale Ausgabelänge.
-• Definiert auch eine Systemanweisung zur Steuerung des Antwort Styles.
+* Richtet Parameter für die Textgenerierung ein, z.b. Temperatur (Steuert ob die AI kreativ oder eher Stumpf antwortet), Top-P, Top-K und maximale Ausgabelänge.
+* Definiert auch eine Systemanweisung zur Steuerung des Antwortstyles.
 
 2. Modelinitialisierung
-• Erstellt eine generative Modellinstanz unter Verwendung des ausgewählten Modells (In unserem Falle Gemini 1.5 Flash-Modell) und unsere Konfiguration.
+* Erstellt eine generative Modellinstanz unter Verwendung des ausgewählten Modells (In unserem Falle Gemini 1.5 Flash-Modell) und unsere Konfiguration.
 
 3. Conversation Loop
-• Erhält den User-Input per Spracheingabe.
-• Startet eine neue Chat-Sitzung mit dem Modell.
-• Druckt und spricht die Antwort des Modells.
+* Erhält den User-Input per Spracheingabe.
+* Startet eine neue Chat-Sitzung mit dem Modell.
+* Textausgabe und sprachliche Antwort des Modells.
 
-Essenziell ermöglicht unser Code dem Benutzer über Sprachbefehle mit der Gemini LLM zu interagieren um textbasierte Antworten zu erhalten, die dann vorgelesen werden.
-
+Unser Code ermöglicht es dem Benutzer, über Sprachbefehle mit dem Gemini-LLM zu interagieren. Die textbasierten Antworten des Modells werden dabei generiert und anschließend vorgelesen.
 
 
 ### 4.2.2 Softwarekomponente News
-• Wie wurden die Vorgaben aus der Architektur in der Software Komponente B realisiert
 
-Eine Anforderung von Jarvis war es, dass er uns aktuelle News erzählen kann. Dies haben wir umgesetzt, indem wir uns die```newsapi```-Bibliothek zu nutzen genommen haben. Um die Funktion umzusetzen wird ```get_news()``` genutzt. Über die Funktion```get_audio()``` in Kombination mit```text2num``` kann man per Sprachsteuerung sagen was man möchte und wieviele News man hören möchte. ```k``` ist in dem Fall die Zahl. 
+Eine Anforderung von Jarvis war, dass aktuelle News ausgegeben werden. Dies haben wir umgesetzt, indem wir uns die```newsapi```-Bibliothek nutzen. Um die Funktion umzusetzen nutzen wir ```get_news()```. Über die Funktion```get_audio()``` in Kombination mit```text2num``` kann man per Sprachsteuerung sagen, was man möchte und wie viele News man hören möchte. ```k``` stell stellt die Anzahl der Nachrichten dar.
+
 ```python
 def get_news():
     top_headlines = newsapi.get_top_headlines(language=my_config["news_language"], country=my_config["news_country"])
@@ -1675,8 +1348,7 @@ def get_news():
             csvlogger.critical("ErrorType : {}, Error : {}".format(type(e).__name__, e))
             print("ErrorType : {}, Error : {}".format(type(e).__name__, e))
             print("All {} messages are output!!!".format(len(top_headlines['articles'])))
-            ##k = len(top_headlines['articles'])
-            k = 1
+            k = len(top_headlines['articles'])
 
         news_text = "Here are {} top news headlines.".format(k)
         print(news_text)
@@ -1702,27 +1374,28 @@ def get_news():
     else:
         speak("Sorry, I couldn't find any news right now.")
 ``` 
-1. Nachrichten abrufen
-• Holt aktuelle Schlagzeilen von einer Nachrichten-API.
+1. Nachrichten abrufen:
+* Holt aktuelle Schlagzeilen von einer Nachrichten-API.
 
-2. Abfrage der News
-• Hier wird gefragt, wie viele Nachrichten man hören möchte. 
+2. Abfrage der News:
+* Hier wird gefragt, wie viele Nachrichten man hören möchte.
 
-3. Nachrichten vorlesen
-• Titel und Beschreibung der News werden vorgelesen, basierend auf der Anzahl, welche man gesagt hat.
+3. Nachrichten vorlesen:
+* Titel und Beschreibung der News werden vorgelesen.
 
-4. Fehlermeldungen
-• Wenn es aktuell keine neuen Nachrichten gibt bzw. es keine erkannt worden sind, wird ein Fehler gemeldet. Dasselbe geschieht auch bei fehlerhafter Eingabe.
+4. Fehlermeldungen:
+* Wenn es aktuell keine neuen Nachrichten gibt bzw. es keine erkannt worden sind, wird eine Information ausgegeben. Dasselbe geschieht auch bei fehlerhafter Eingabe.
+* Nicht erkennbare Zahl eingegeben, gibt der chatbot alle news aus, die er hat.
 
 
 
 ### 4.2.3 Softwarekomponente Email
-Bei der Realisierung der Email erwies sich nach Gesprächen mit Herrn Grothe die bereits implementierte und nahe zu funktionierende GoogleAPI als Fehlentscheidung. 
-Die ausschlaggebenden Argumente für die API waren, dass diese einfach und besonders Sicher ist.
-Wir sind auf das Problem gestoßen, dass jeder Email provider verschiedene Level an Rechten vergibt. Bei Gmail hatten wir Fall das wir keine E-Mails endgültig löschen konnten und sie nur in den Papierkorb verschieben durften. Daher haben sind wir auf IMAP und SMTP umgestiegen, um E-mails zu versenden, löschen und zu lesen. Hauptgründe um nun wirklich zu wechseln, da wir das endgültige Löschen nicht benötigt haben, sind die Einfachheit und die Unabhängigkeit von E-Mail-Diensten. 
+Nach Gesprächen mit Herrn Grothe, stellte sich die Verwendung der bereits implementierten und nahezu funktionierenden GoogleAPI als Fehlentscheidung heraus. 
+Die ausschlaggebenden Argumente für die Nutzung der API waren, dass diese nicht nur einfach zu implementieren, sondern auch besonders sicher ist.
+Außerdem sind wir auf das Problem gestoßen, dass verschiedene E-Mail-Provider unterschiedliche Berechtigungsstufen vergeben. Bei Gmail war das Problem, dass E- Mails nur in den Papierkorb verschoben werden konnten. Eine endgültige Löschung war nicht möglich, weswegen wir unter anderem auf IMAP und SMTP umgestiegen sind.Weitere Gründe, die ausschlaggebend für den Wechsel waren, sind die Einfachheit und die Unabhängigkeit jener E-Mail-Dienste.  IMAP und SMTP bieten die Möglichkeit E-mails zu versenden, zu lesen und endgültig zu löschen. Letztendlich stellte sich heraus, dass wir die Funktion E- Mails endgültig zu löschen gar nicht benötigt haben.
 
-#### 4.2.4 check_mails() und IMAP
-Um das Lesen der Emails zu ermöglichen haben wir uns IMAP (Internet Message Access Protocol) zu nutze gemacht um so mit dem IMAP Server unseres Providers zu kommunizieren. 
+#### 4.2.3.1 E-mail lesen
+Um das Lesen der E- Mails zu ermöglichen haben wir uns IMAP (Internet Message Access Protocol) zu Nutze gemacht, um so mit dem IMAP Server unseres Providers zu kommunizieren. 
 
 ```python
 def imap_connect_to_email():
@@ -1734,36 +1407,87 @@ def imap_connect_to_email():
     return mail
 ```
 
-Den Inhalt in "mail" verwenden wir in unserer nächsten Funktion,```check_mails(mail)```
-Um unsere Ziele zu erreichen was das Lesen von Emails angeht geht unser code so vor:
-1. Verbindet zur Inbox und bekommt die Emails
-• Wählt den Inbox Ordner aus.
-• Sucht nach allen Emails 'ALL' 
-• Dreht die Email ID's um damit die ersten Emails zuerst angezeigt/vorgelesen werden.
+Den Inhalt in "mail" verwenden wir dann in der Funktion,```check_mails(mail)```
+Um unsere Ziele im Hinblick auf das Lesen von E-Mails zu erreichen, geht unser code wie folgt vor:
 
-2. Loop durch alle Emails
-Für jede Email ID:
-• Holt sich das Programm alle Email Details
-• Analysiert die Email Message
-• Kündigt die Email Reihe an (1st, 2nd, 3rd usw.)
+1. Verbindung zur Inbox:
+* Wählt den Inbox Ordner aus
+* Sucht nach allen E-Mails 'ALL'
+* Dreht die E-Mail ID's um damit die ersten E-Mails zuerst angezeigt/vorgelesen werden
 
-3. Liest den Email Text basieren auf den User-Input oder macht andere aktionen.
-• Hört auf die Voice commands "read", "delete", "skip" oder "exit"
-• Wenn „read“ - Extrahiert den Klartexttext der E-Mail und liest ihn vor. Fragt den Benutzer danach, ob er die E-Mail löschen möchte.
-• Bei „delete“: Markiert die E-Mail zum Löschen und entfernt sie vom Server.
-• Bei „skip“: Weiter zur nächsten E-Mail.
-• Bei „exit“: Beendet das Programm.
+2. Loop durch alle E-Mails
+    für jede E-Mail-ID:
+* Programm holt sich alle E-Mail-Details
+* Analyse der E-Mail-Message
+* Kündigung der E-Mail Reihe nach an (1st, 2nd, 3rd usw.)
 
+3. Liest den E-Mail Text basieren auf den User-Input oder macht andere Aktionen:
+* Hört auf die Voice commands "read", "delete", "skip" oder "exit"
+* Bei „read“: Extrahiert den Klartext-Text der E-Mail und liest ihn vor. Fragt den Benutzer danach, ob er die E-Mail löschen möchte
+* Bei „delete“: Markiert die E-Mail zum Löschen und entfernt sie vom Server
+* Bei „skip“: Weiter zur nächsten E-Mail
+* Bei „exit“: Komponente E-Mail wird beendet
 
-#### 4.2.5 schreiben
+Das Löschen der Email wird wie folgt implementiert:
 
+```python
+        elif "delete" in text:
+            mail.store(email_id, '+FLAGS', '\\Deleted')
+            mail.expunge()
+            speak("Email deleted.")
+```
 
-#### 4.2.6 Regestrierungfenster
+Nachdem der User die Spracheingabe "delete" übergeben hat:
+* Email wird mit bestimmten Kennzeichen markiert um Löschung vorzubereiten
+* Mit mail.expunge() wird die Mail dann Permanent von dem Server entfernt.
+* Danach bekommen wir eine gesprochene Bestätigung das die Email gelöscht wurde.
 
+#### 4.2.3.2 E-mail senden
+Zum Schreiben der Email verwenden wir zwei Funktionen die miteinander zusammenhängen, im ersten Teil geht es um das Verfassen der Email und im zweiten um das Senden.
+Die create_mail() Funktion geht so vor:
+1. Email-Objekt erstellen:
+* Am Anfang wird ein leeres Email-Objekt angelegt, in das die verschiedenen Bestandteile der Email eingetragen werden. (Absender, Betreff, Empfänger, Inhalt)
+2. Benutzer-Eingaben:
+* Der Benutzer muss jetzt die erforderlichen Informationen über Tastatur eingeben (Empfänger, CC, BCC)
+3. Email-Inhalt zusammensetzen:
+* Der eingegebene Text wird Zeile für Zeile in einer Schleife zusammengefügt, bis der User die Eingabe mit drei einfachen Anführungszeichen beendet
+4. Email-Objekt vervollständigen und return
+* Der zusammengesetzte Text wird als Inhalt der Email festgelegt und dieses zurückgegebenes Objekt geht an die write_email().
 
-#### 4.2.7 Verschlüsselung 
+1. Email-Objekt erstellen:
+* Am Anfang wird ein leeres E-Mail-Objekt angelegt, in das die verschiedenen Bestandteile der Email eingetragen werden. (Absender, Betreff, Empfänger, Inhalt)
+2. Betreff
+* Der Benutzer spricht den Betreff als Eingabe ein
+3. Email-Inhalt zusammensetzen:
+* Der Benutzer spricht seine Nachricht ein
+4. Benutzer-Eingaben:
+* Der Benutzer muss jetzt die erforderlichen Informationen über Tastatur eingeben (Empfänger, CC, BCC)
+5. Email-Objekt vervollständigen:
+* Das erstelle E-mail-Objekt wird nun an die "write_email" Funktion zurückgegeben
 
+Die Funktion "write_mail():" wird zum senden der E-mails genutzt:
 
+1. Verbindung zu dem Email-Server:
+* Zuerst bauen wir eine Verbindung zu dem Email-Server, über die Funktion smtp_connect_to_email() auf.
+2. Erstellen der Email:
+* Die Funktion create mail wird hier nun aufgerufen damit wir das returned Object verwenden können.
+3. Senden der Email:
+* Die erstellte E-Mail wird über die SMTP-Verbindung versendet.
+4. Bestätigung: 
+* Nach dem Versand werden verschiedene Meldungen ausgegeben, um den erfolgreichen Versand zu bestätigen.
+
+#### 4.2.4 Registrierungsfenster
+Unser Registrierungsfenster ist mit der Bibliothek "tkinter" umgesetzt worden. Das Interface zeigt "Registration" als Überschrift. Darunter sind viele Eingabefelder zu erkennen, bei denen noch keine Benutzerfreundlichkeiten oder Benutzereingrenzungen implementiert worden sind. "First name:" und "Last name:" sind bisher nur Lückenfüller. 
+Diese sollen nur die Struktur bilden. Folgend kommen die Textfelder "e-mail address:" und "Password:". Diese werden derzeit aus Testgründen in der csv-Datei "Beispiel" gespeichert und dann später in der csv-Datei "Geheimdaten". 
+Dies hat den Grund, dass wir somit die Software testen konnten, ohne die richtigen Anmeldedaten zu beschädigen. 
+In der besagten "Geheimdaten" -Datei, werden "user", "Password" und die API's gespeichert (in der Abgabe Befindet sich das Programm "DateiVerschluesseln", mit dem man zur Prüfung "per hand" beide csv-Dateien verschlüsseln und entschlüsseln kann). 
+Da die Texfelder "First name:" und "Last name:" bisher nur Lückenfüller sind, werden diese nicht gespeichert. Des Weiteren wurde ein "Encryption" Checkbox implementiert. Mit diesem Button kann der Nutzer Entscheiden, ob die neuen eingegebenen Informationen in der csv-Datei verschlüsselt oder unverschlüsselt überschrieben werden sollen. 
+Bisher ist es so angedacht, dass die "beispiel.csv" -Datei immer überschrieben wird.  Zuletzt haben wir zwei Buttons "Finish" und "Register". 
+Mit dem Button "Finish" schließt sich das Fenster, die bereits gespeicherten Daten aus der csv-Datei werden genutzt und Jarvis wird gestartet. Der Button "Register" überschreibt die eingegebenen Daten in der Datei und führt dann, ebenfalls Jarvis aus. 
+Dieser wird jedoch nur aktiv, wenn alle Eingabefelder gefüllt sind.
+
+#### 4.2.5 Verschlüsselung 
+Zuerst wird der Hashschlüssel mit dem Schlüssel "Pascal" erzeugt und auf 32 bits festgelegt. Bei einer Verschlüsselung werden die Dateien Binär ausgelesen und mit dem Hashschlüssel verschlüsselt. Die verschlüsselten Daten werden dann wieder in Binär in die Datei zurückgeschrieben. Bei einer Entschlüsselung werden die Dateien Binär ausgelesen und mit dem Hashschlüssel entschlüsselt und ebenfalls in Binär in die Datei zurückgeschrieben. Einige Sicherheitsbedenken sind vorhanden und werden noch hinzugefügt.
 
 ## 4.3 Querschnittliche Konzepte
 Gesamthaft wichtige Regelungen und Lösungsansätze, die in mehreren Teilen (→ querschnittlich) des
@@ -1771,11 +1495,36 @@ Systems relevant sind. Konzepte sind oft mit mehreren Bausteinen verbunden. Umfa
 Themen wie Domänenmodelle, Architekturmuster und -stile, Regeln für die Verwendung spezifischer
 Technologien und Implementierungsregeln Quelle: ARC42.
 
-## 4.4 Testen
-• Hier beschreiben Sie die Umsetzung/Realisierung Ihres Testplans.
-(Damit man Gmail verwenden kann für unsere Applikation muss man bei Gmail in den Einstellungen IMAP  aktivieren https://support.google.com/a/answer/105694?hl=de .  Außerdem braucht man ein App passwort. Dies kann man leider auch erst nach einer 2 Faktor Sicherung des Google Accounts einrichten.https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237 Dieses App Passwort wird verwendet um in auf den IMAP Server zu zugreifen.)
+1. Architekturmuster und -stile:
+Das System verwendet modulare Architekturprinzipien, wie eine Trennung in Frontend imd Backend.
 
-...
+2. Sicherheitskonzepte:
+    Sicherheitsrichtlinien sind querschnittlich relevant: E-Mail-Passwörter werden verschlüsselt, API-Schlüssel sicher verwaltet, und sensible Daten nur über TLS übertragen. Diese Sicherheitsmaßnahmen greifen unabhängig davon, welches Modul sie nutzt.
+
+3. Implementierungsregeln:
+    Es gibt Regeln, welche in allen Modulen angewendet werden, um die Sicherheit und Wartbarkeit zu gewährleisten.
+
+4. Verwendung spezifischer Technologien:
+    Durch die Integration von ```pyttsx3```für die Sprachausgabe, die Gemini-API für den lauffähigen Chatbot und die Integration von IMAP/SMTP für E-Mails werden definierten Regeln gefolgt. Dadurch wird z.B. die Authentifizierung oder das Fehlermanagement geregelt und dies gilt für alle Module, welche diese Technologien nutzen.
+
+## 4.4 Testen der Software
+
+
+### 4.4.1 E-Mail verarbeitung
+Hier wird sich darauf konzentriert, eine funktionierende Verbindung zu dem E-Mail Server aufzubauen. Wenn diese Funktion klappt, erfolgt der Abruf der Mails, welche man an die Mail-Adresse versendet hat. Anhand dieser Grundlage konnten wir testen, ob man den Absender und den Betreff einsehen/sich anhören kann. Dafür haben wir eine Testmail versendet per Sprache und uns eine Mail senden lassen und diese durch Steuerung per Sprache abgerufen, um sicherzustellen, dass die jeweiligen Befehle wie Mails vorlesen, löschen und überspringen funktionsfähig sind. Bei der Löschung wurde geprüft, dass die Mails auch sorgfältig in dem Papierkorb gelandet sind. 
+
+### 4.4.2 Spracherkennung und Ausgabe
+Die Funktionalität der Sprachsteuerung wurde getestet, indem die Sprachsteuerung durch verschiedene Befehle wie "read" aufgefordert wurde. Hierbei wurde dann sichergestellt, dass die Erkennung präzise und die Eingabe korrekt ist. Als Test haben wir eine Testnachricht vorlesen lassen. Dabei wurde darauf geachtet, dass die Stimme klar und deutlich zu verstehen ist. Man kann die VoiceID auch anpassen. 
+
+### 4.4.3 Nachrichtenintegration
+Die Integration der Nachrichtenfunktion wurde durch das Abrufen von aktuellen Schlagzeilen getestet. Dabei konnten wir die Anzahl der Nachrichten eingeben, wie viele gehört werden sollten. Es wurde dann verständlich der Titel und die Schlagzeile gesagt.
+
+### 4.4.4 Registrierung
+In diesem Schritt wurde die Registrierungsoberfläche getestet. Dazu wurde das Registrierungsfenster geöffnet, und Testdaten wie Vorname, Nachname, E-Mail-Adresse und Passwort eingegeben. Es ist wichtig zu Testen, dass der Button "Registrieren" nur aktiv wird, wenn alle Eingabefelder gefüllt sind. Die eingegebenen Daten sind in der "beispiel.csv" Datei gespeichert. Bei der Registrierung können die Daten auf Wunsch des Benutzers verschlüsselt oder unverschlüsselt sein. In dem unverschlüsselten Fall, wurde getestet, ob wirklich das zu sehen ist, was eingegeben wurde. In dem verschlüsselten Fall musste sichergestellt werde, dass es verschlüsselt in der Datei eingetragen wurde und ob es entschlüsselbar ist. Dazu wurde das Tool "Tool_DateiVerschluesseln.py" benutzt. 
+
+### 4.4.5 Chatbot
+Der Chatbot wurde mit einfachen Anfragen wie „Erzähl einen Witz“ und „Wie ist das Wetter?“ getestet. Die Antworten wurden auf Relevanz und Geschwindigkeit geprüft. API-Ausfälle wurden simuliert, um korrekte Fehlermeldungen wie „Chatbot nicht verfügbar“ zu validieren. 
+
 
 # 5 Anleitungen (Meilenstein 3)
 
